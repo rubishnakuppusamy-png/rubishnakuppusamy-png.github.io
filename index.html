@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubishna Kuppusamy | Data Science & Machine Learning Portfolio</title>
+    <meta name="description" content="Portfolio of Rubishna Kuppusamy, B.Sc. Data Science student specializing in Python, SQL, Machine Learning, and Data Analytics.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config for Deep Violet Accent Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            900: '#4c1d95',
+                        },
+                        darkBg: '#0b0f19',
+                        darkCard: '#111827',
+                        darkBorder: '#1f2937'
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Outfit', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(139, 92, 246, 0.3);
+        }
+        .bento-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(139, 92, 246, 0.25);
+        }
+        .terminal-header {
+            background: #1f2937;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #c084fc 0%, #8b5cf6 50%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold font-mono tracking-tight text-white flex items-center gap-2">
+                <span class="text-brand-500">&lt;</span>Rubishna<span class="text-brand-500">/&gt;</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-brand-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-brand-400 transition-colors">Skills</a>
+                <a href="#focus" class="hover:text-brand-400 transition-colors">Current Focus</a>
+                <a href="#education" class="hover:text-brand-400 transition-colors">Education</a>
+                <a href="#contact" class="hover:text-brand-400 transition-colors">Contact</a>
+            </div>
+            <a href="resume.html" target="_blank" class="bg-brand-600 hover:bg-brand-500 text-white font-medium px-4 py-2 rounded-lg text-sm transition-all duration-200 flex items-center gap-2 glow-effect">
+                <i class="fa-solid fa-file-pdf"></i> ATS Resume
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 space-y-16">
+
+        <!-- HERO SECTION: DEVELOPER TERMINAL (Option B) -->
+        <section id="hero" class="pt-8" data-aos="fade-up" data-aos-duration="1000">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Bio Text -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                        B.Sc. Data Science Student
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Hi, I'm <span class="gradient-text">Rubishna Kuppusamy</span>
+                    </h1>
+                    
+                    <p class="text-gray-300 text-lg sm:text-xl leading-relaxed">
+                        Aspiring Data Scientist & Machine Learning Enthusiast passionate about transforming complex data into actionable insights, visual storytelling, and continuous learning.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="https://www.linkedin.com/in/rubishna-kuppusamy-332902375/" target="_blank" rel="noopener" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center gap-2 shadow-lg shadow-brand-600/30">
+                            <i class="fa-brands fa-linkedin text-lg"></i> LinkedIn Profile
+                        </a>
+                        <a href="https://github.com/rubishnakuppusamy-png" target="_blank" rel="noopener" class="bg-darkCard hover:bg-gray-800 text-gray-200 border border-gray-700 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center gap-2">
+                            <i class="fa-brands fa-github text-lg"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Terminal Window -->
+                <div class="lg:col-span-6">
+                    <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-800 bg-[#0d1117] font-mono text-sm">
+                        <!-- Terminal Header -->
+                        <div class="terminal-header px-4 py-3 flex items-center justify-between border-b border-gray-800">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-red-500 block"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500 block"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500 block"></span>
+                            </div>
+                            <span class="text-gray-400 text-xs font-semibold">rubishna@datascience:~</span>
+                            <i class="fa-solid fa-terminal text-gray-500 text-xs"></i>
+                        </div>
+
+                        <!-- Terminal Body -->
+                        <div class="p-6 space-y-4 text-gray-300">
+                            <div class="flex items-center gap-4 border-b border-gray-800 pb-4">
+                                <!-- Avatar Failsafe -->
+                                <img src="https://ui-avatars.com/api/?name=Rubishna+Kuppusamy&background=8B5CF6&color=fff&size=256" alt="Rubishna Avatar" class="w-16 h-16 rounded-full border-2 border-brand-500 shadow-md">
+                                <div>
+                                    <p class="text-white font-bold text-base">Rubishna Kuppusamy</p>
+                                    <p class="text-brand-400 text-xs">Degree: B.Sc. Data Science</p>
+                                    <p class="text-gray-400 text-xs">Status: Learning & Building</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <p class="text-emerald-400"><span class="text-brand-400">rubishna@ds</span>:<span class="text-blue-400">~</span>$ python profile_info.py</p>
+                                <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
+                                    <p><span class="text-purple-400">focus_areas</span> = [<span id="typed-text" class="text-yellow-300"></span>]</p>
+                                    <p><span class="text-purple-400">languages</span> = [<span class="text-green-300">"Python"</span>, <span class="text-green-300">"SQL"</span>]</p>
+                                    <p><span class="text-purple-400">analytics_tools</span> = [<span class="text-cyan-300">"Power BI"</span>, <span class="text-cyan-300">"Tableau"</span>, <span class="text-cyan-300">"Excel"</span>]</p>
+                                    <p><span class="text-purple-400">status</span> = <span class="text-emerald-300">"Open to Collaborations & Learning Opportunities"</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENTO GRID SECTION (Option A Layout) -->
+        <section id="about" class="space-y-8">
+            <div class="text-center space-y-2" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-white">Interactive Bento Overview</h2>
+                <p class="text-gray-400 text-sm max-w-xl mx-auto">Explore my academic focus, technical toolkit, and learning journey in Data Science.</p>
+            </div>
+
+            <!-- Bento Container -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Tile 1: Current Focus & Passion (Large Card - Spans 2 cols) -->
+                <div class="md:col-span-2 bento-card p-6 rounded-2xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Current Academic Focus</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Currently pursuing my **B.Sc. in Data Science**. My main focus revolves around building strong foundations in Data Analytics, Data Mining, Machine Learning algorithms, and practical Python implementations.
+                        </p>
+                    </div>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="bg-gray-800 text-brand-300 text-xs px-3 py-1.5 rounded-lg font-medium border border-gray-700">Data Analytics</span>
+                        <span class="bg-gray-800 text-brand-300 text-xs px-3 py-1.5 rounded-lg font-medium border border-gray-700">Machine Learning</span>
+                        <span class="bg-gray-800 text-brand-300 text-xs px-3 py-1.5 rounded-lg font-medium border border-gray-700">Statistical Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Tile 2: Core Languages & Tools -->
+                <div id="skills" class="bento-card p-6 rounded-2xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Data Stack</h3>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li class="flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-brands fa-python text-yellow-400"></i> Python</span>
+                                <span class="text-xs text-brand-400 font-semibold">Advanced</span>
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-database text-blue-400"></i> SQL</span>
+                                <span class="text-xs text-brand-400 font-semibold">Intermediate</span>
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-chart-pie text-amber-400"></i> Power BI</span>
+                                <span class="text-xs text-brand-400 font-semibold">Intermediate</span>
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-file-excel text-green-400"></i> Excel</span>
+                                <span class="text-xs text-brand-400 font-semibold">Advanced</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tile 3: Data Viz & Libraries -->
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Libraries & Analytics</h3>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-800 text-gray-200 px-3 py-1.5 rounded-md border border-gray-700">Pandas</span>
+                            <span class="bg-gray-800 text-gray-200 px-3 py-1.5 rounded-md border border-gray-700">NumPy</span>
+                            <span class="bg-gray-800 text-gray-200 px-3 py-1.5 rounded-md border border-gray-700">Scikit-Learn</span>
+                            <span class="bg-gray-800 text-gray-200 px-3 py-1.5 rounded-md border border-gray-700">Tableau</span>
+                            <span class="bg-gray-800 text-gray-200 px-3 py-1.5 rounded-md border border-gray-700">Exploratory Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tile 4: Soft Skills & Teamwork (Spans 2 cols) -->
+                <div class="md:col-span-2 bento-card p-6 rounded-2xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Soft Skills & Collaborations</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Beyond data & code, I thrive in collaborative team environments. I enjoy data story-telling, effective communication, creative content creation, and solving complex real-world problems.
+                        </p>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-3 text-xs font-semibold text-emerald-300">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Teamwork & Leadership</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Active Communication</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Problem-Solving Mindset</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Content Creation</span>
+                    </div>
+                </div>
+
+                <!-- Tile 5: Practical Learning Projects (Spans 2 cols) -->
+                <div id="focus" class="md:col-span-2 bento-card p-6 rounded-2xl flex flex-col justify-between" data-aos="fade-up" data-aos-delay="500">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Learning & Practical Projects</h3>
+                        <div class="space-y-3">
+                            <div class="p-3 bg-gray-900/60 rounded-xl border border-gray-800">
+                                <h4 class="text-sm font-bold text-brand-300">Exploratory Data Analysis (EDA) Projects</h4>
+                                <p class="text-xs text-gray-400">Cleaning, processing, and visual reporting of datasets using Python (Pandas, NumPy) & interactive Power BI dashboards.</p>
+                            </div>
+                            <div class="p-3 bg-gray-900/60 rounded-xl border border-gray-800">
+                                <h4 class="text-sm font-bold text-brand-300">Machine Learning Experiments</h4>
+                                <p class="text-xs text-gray-400">Implementing foundational classification and regression algorithms using Scikit-Learn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="bento-card p-8 rounded-3xl space-y-6" data-aos="fade-up">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 text-xl">
+                    <i class="fa-solid fa-university"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white">Education & Academics</h2>
+                    <p class="text-gray-400 text-xs">Formal academic qualifications and learning journey</p>
+                </div>
+            </div>
+
+            <div class="border-l-2 border-brand-500/40 pl-6 ml-4 space-y-6">
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-brand-500 border-4 border-darkBg"></span>
+                    <h3 class="text-lg font-bold text-white">Bachelor of Science (B.Sc.) in Data Science</h3>
+                    <p class="text-brand-400 text-sm font-medium">Currently Pursuing</p>
+                    <p class="text-gray-300 text-sm mt-2">
+                        Comprehensive coursework covering Python Programming, Database Management (SQL), Statistics & Probability, Machine Learning Concepts, Data Visualization, and Business Intelligence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & CONNECT SECTION -->
+        <section id="contact" class="bento-card p-8 rounded-3xl text-center space-y-6" data-aos="fade-up">
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="w-16 h-16 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 text-2xl mx-auto">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-white">Let's Connect & Collaborate!</h2>
+                <p class="text-gray-300 text-sm">
+                    I am always enthusiastic about discussing Data Analytics, Machine Learning projects, or connecting with fellow learners and industry professionals.
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-4 pt-4">
+                    <a href="mailto:rubishnakuppusamy@gmail.com" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 flex items-center gap-2 glow-effect">
+                        <i class="fa-solid fa-envelope"></i> Send Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/rubishna-kuppusamy-332902375/" target="_blank" rel="noopener" class="bg-darkCard hover:bg-gray-800 text-gray-200 border border-gray-700 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 flex items-center gap-2">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/rubishnakuppusamy-png" target="_blank" rel="noopener" class="bg-darkCard hover:bg-gray-800 text-gray-200 border border-gray-700 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 flex items-center gap-2">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-xs space-y-2">
+        <p>&copy; 2026 Rubishna Kuppusamy. All rights reserved.</p>
+        <p>Built with Tailwind CSS, AOS, & Typed.js | Crafted by PortfolioWizard</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Typed.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <script>
+        // Initialize AOS Scroll Animations (Option A)
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Initialize Typed.js for Terminal Hero Section (Option B)
+        var typed = new Typed('#typed-text', {
+            strings: [
+                '"Data Science"',
+                '"Machine Learning"',
+                '"Data Analytics"',
+                '"Python & SQL"',
+                '"Power BI & Tableau"'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+</body>
+</html>
