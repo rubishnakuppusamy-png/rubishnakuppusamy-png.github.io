@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -507,7 +507,7 @@
             </div>
 
             <!-- Blog Content Body -->
-            <div id="blog-body" class="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
+            <div id="blog-body" class="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
                 <p>
                     Starting something new often comes with a mix of excitement, uncertainty, and curiosity. <b>Week 0 of the PRICE Protosem at Forge Innovation & Ventures</b> was exactly that—a week of stepping outside my comfort zone, meeting new people, and discovering something new every day.
                 </p>
@@ -516,49 +516,93 @@
                     The week began with ice-breakers and team activities that helped us connect with one another and become more comfortable as a group. These activities may have seemed simple at first, but they taught us important lessons about communication, teamwork, and building connections with people from different backgrounds.
                 </p>
 
-                <div class="p-4 bg-gray-900/90 rounded-2xl border-l-4 border-brand-500 space-y-2">
-                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
-                        <i class="fa-brands fa-linkedin text-blue-400"></i> Professional Branding & Personal Assessment
-                    </h4>
-                    <p class="text-xs text-gray-300">
-                        One of the highlights of the week was the <b>LinkedIn session</b>, which provided valuable insights into building a professional presence and presenting ourselves effectively in the digital world. The <b>personality assessment</b> was another interesting experience, encouraging us to reflect on our strengths, characteristics, and areas where we can improve.
-                    </p>
+                <!-- Professional Journey Timeline -->
+                <div class="relative pl-6 sm:pl-8 border-l border-gray-700/50 space-y-8 my-8">
+                    
+                    <!-- Item 1: Professional Branding -->
+                    <div class="relative group">
+                        <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-brand-400 group-hover:bg-brand-400 transition-colors z-10 shadow-[0_0_10px_rgba(139,92,246,0.3)]"></div>
+                        <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 border border-blue-500/20">
+                                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                                </div>
+                                <h4 class="text-white font-semibold text-base">Professional Branding & Assessment</h4>
+                            </div>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                The <b>LinkedIn session</b> provided valuable insights into building a professional presence in the digital world. The <b>personality assessment</b> encouraged reflection on our core strengths, characteristics, and areas for improvement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Storytelling -->
+                    <div class="relative group">
+                        <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-purple-400 group-hover:bg-purple-400 transition-colors z-10 shadow-[0_0_10px_rgba(168,85,247,0.3)]"></div>
+                        <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 border border-purple-500/20">
+                                    <i class="fa-solid fa-pen-nib text-lg"></i>
+                                </div>
+                                <h4 class="text-white font-semibold text-base">Storytelling & Creative Expression</h4>
+                            </div>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                The <b>Zen Pencils storytelling session</b> was highly engaging, showcasing how powerful storytelling connects ideas with an audience and encourages us to express our thoughts in a more meaningful way.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Marshmallow Challenge -->
+                    <div class="relative group">
+                        <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-amber-400 group-hover:bg-amber-400 transition-colors z-10 shadow-[0_0_10px_rgba(251,191,36,0.3)]"></div>
+                        <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 border border-amber-500/20">
+                                    <i class="fa-regular fa-lightbulb text-lg"></i>
+                                </div>
+                                <h4 class="text-white font-semibold text-base">The Marshmallow Challenge</h4>
+                            </div>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                This team-building exercise turned into a practical lesson in creativity, communication, and problem-solving. It proved that successful teamwork requires testing ideas, learning from mistakes, and adapting quickly.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="p-4 bg-gray-900/90 rounded-2xl border-l-4 border-purple-500 space-y-2">
-                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
-                        <i class="fa-solid fa-pen-nib text-purple-400"></i> Storytelling & Creative Expression
-                    </h4>
-                    <p class="text-xs text-gray-300">
-                        The <b>Zen Pencils storytelling session</b> was particularly engaging. It showed us how powerful storytelling can be in communicating ideas and connecting with an audience. It encouraged us to think creatively and express our thoughts in a more meaningful way.
-                    </p>
+                <!-- Featured Card: Keynote -->
+                <div class="relative bg-gradient-to-br from-brand-900/40 via-gray-900 to-gray-900 p-[1px] rounded-2xl my-8 overflow-hidden group hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="bg-darkCard/90 backdrop-blur-xl p-6 sm:p-8 rounded-2xl relative">
+                        <div class="flex flex-col sm:flex-row sm:items-start gap-5">
+                            <div class="flex w-14 h-14 shrink-0 rounded-2xl bg-brand-500/10 items-center justify-center border border-brand-500/30">
+                                <i class="fa-solid fa-microphone-lines text-2xl text-brand-400"></i>
+                            </div>
+                            <div class="space-y-3 w-full">
+                                <div class="inline-block px-2.5 py-1 rounded bg-brand-500/20 text-brand-300 font-mono text-[10px] font-bold uppercase tracking-widest border border-brand-500/30">
+                                    Highlight of the Week
+                                </div>
+                                <h4 class="text-xl font-bold text-white">Inaugural Session Keynote</h4>
+                                <div class="text-brand-400 font-medium text-sm flex flex-col sm:flex-row sm:items-center">
+                                    <span>Mr. Kumar Rajagopalan</span>
+                                    <span class="hidden sm:inline text-gray-500 mx-2">|</span>
+                                    <span class="text-gray-400 font-normal">CEO, Retailers Association of India (RAI)</span>
+                                </div>
+                                <div class="text-gray-300 text-sm leading-relaxed border-l-2 border-brand-500/50 pl-4 mt-4 italic bg-brand-950/20 p-3 rounded-r-lg">
+                                    "His insights into the retail industry provided us with a broader perspective on the sector and helped us understand the importance of innovation, adaptability, and understanding changing consumer needs."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="p-4 bg-gray-900/90 rounded-2xl border-l-4 border-amber-500 space-y-2">
-                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
-                        <i class="fa-solid fa-lightbulb text-amber-400"></i> The Marshmallow Challenge
-                    </h4>
-                    <p class="text-xs text-gray-300">
-                        Another memorable activity was the <b>Marshmallow Challenge</b>. What appeared to be a simple team-building exercise turned into a practical lesson in creativity, experimentation, communication, and problem-solving. It reminded us that successful teamwork is not always about having the perfect plan, but about being willing to test ideas, learn from mistakes, and adapt along the way.
-                    </p>
-                </div>
-
-                <blockquote class="p-4 bg-brand-950/40 rounded-2xl border border-brand-500/30 text-brand-200 text-xs italic space-y-1">
-                    <p class="font-bold text-white not-italic"><i class="fa-solid fa-quote-left text-brand-400"></i> Inaugural Session Keynote</p>
-                    <p>
-                        A special highlight was the inaugural session by <b>Mr. Kumar Rajagopalan, CEO of the Retailers Association of India (RAI)</b>. His insights into the retail industry provided us with a broader perspective on the sector and helped us understand the importance of innovation, adaptability, and understanding changing consumer needs.
-                    </p>
-                </blockquote>
 
                 <p>
                     Looking back, Week 0 was more than just an introduction to the programme. It was an opportunity to learn about myself, understand others, and experience different ways of thinking and working together.
                 </p>
 
-                <p class="font-semibold text-white pt-2 border-t border-gray-800">
+                <p class="font-semibold text-white pt-4">
                     I am grateful for the experiences, conversations, and connections from this first week. More importantly, I am excited to continue this journey and make the most of the 20-week PRICE Protosem experience ahead.
                 </p>
 
-                <div class="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-center text-emerald-300 text-xs font-semibold">
+                <div class="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-center text-emerald-300 text-xs sm:text-sm font-medium tracking-wide shadow-[0_0_15px_rgba(16,185,129,0.1)]">
                     ✨ Week 0 was just the beginning—and I am looking forward to everything that comes next.
                 </div>
             </div>
