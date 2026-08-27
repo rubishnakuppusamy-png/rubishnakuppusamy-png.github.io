@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Rubishna Kuppusamy | B.Sc. Data Science</title>
+    <style>
+        /* Base Styling for Web & ATS Parsers */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #1f2937;
+            background-color: #f8fafc;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 24pt;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .contact-info {
+            font-size: 9.5pt;
+            color: #475569;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 12pt;
+            color: #0f172a;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #0f172a;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Items & Content */
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 10.5pt;
+            color: #0f172a;
+        }
+        .item-date {
+            font-size: 9.5pt;
+            color: #64748b;
+            font-weight: 500;
+        }
+        .item-subtitle {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #334155;
+            margin-bottom: 6px;
+        }
+
+        p, ul {
+            font-size: 9.5pt;
+            color: #334155;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 18px;
+            margin-bottom: 8px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+
+        .skills-grid {
+            display: table;
+            width: 100%;
+            font-size: 9.5pt;
+        }
+        .skills-row {
+            display: table-row;
+        }
+        .skills-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 30%;
+            padding-bottom: 6px;
+            color: #0f172a;
+        }
+        .skills-value {
+            display: table-cell;
+            width: 70%;
+            padding-bottom: 6px;
+            color: #334155;
+        }
+
+        /* Web Print Toolbar (Hidden during print) */
+        .print-toolbar {
+            max-width: 800px;
+            margin: 0 auto 1.5rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-print {
+            background-color: #7c3aed;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn-print:hover {
+            background-color: #6d28d9;
+        }
+        .back-link {
+            color: #475569;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            color: #0f172a;
+        }
+
+        /* MANDATORY ATS PRINT MEDIA STYLING */
+        @media print {
+            @page { 
+                margin: 15mm; 
+            }
+            header, footer, .print-toolbar { 
+                display: none !important; 
+            }
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Web Print Controls -->
+    <div class="print-toolbar">
+        <a href="index.html" class="back-link">&larr; Back to Interactive Portfolio</a>
+        <button onclick="window.print()" class="btn-print">🖨️ Print / Save to PDF</button>
+    </div>
+
+    <!-- Main Resume Container -->
+    <div class="resume-container">
+        
+        <!-- Header -->
+        <header>
+            <h1>Rubishna Kuppusamy</h1>
+            <div class="subtitle">B.Sc. Data Science Student | Aspiring Data Analyst</div>
+            <div class="contact-info">
+                <span>Email: <a href="mailto:rubishnakuppusamy@gmail.com">rubishnakuppusamy@gmail.com</a></span> |
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/rubishna-kuppusamy-332902375/">linkedin.com/in/rubishna-kuppusamy-332902375</a></span> |
+                <span>GitHub: <a href="https://github.com/rubishnakuppusamy-png">github.com/rubishnakuppusamy-png</a></span>
+            </div>
+        </header>
+
+        <!-- Professional Summary / Current Focus -->
+        <section>
+            <h2>Summary</h2>
+            <p>
+                Enthusiastic and analytical B.Sc. Data Science student dedicated to transforming complex data into actionable insights. Proficient in Python, SQL, Power BI, Advanced Excel, and data visualization techniques. Passionate about machine learning algorithms, problem-solving, and collaborative data projects.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="item-header">
+                <span class="item-title">Bachelor of Science (B.Sc.) in Data Science</span>
+                <span class="item-date">Present</span>
+            </div>
+            <div class="item-subtitle">Undergraduate Degree Program</div>
+            <ul>
+                <li>Relevant Coursework: Data Analytics, Database Management Systems (SQL), Machine Learning Concepts, Python Programming, Statistics & Probability, Exploratory Data Analysis.</li>
+                <li>Actively engaging in hands-on projects and analytical problem-solving exercises.</li>
+            </ul>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-row">
+                    <div class="skills-label">Programming & Languages:</div>
+                    <div class="skills-value">Python, SQL</div>
+                </div>
+                <div class="skills-row">
+                    <div class="skills-label">Data Analysis & Libraries:</div>
+                    <div class="skills-value">Pandas, NumPy, Scikit-learn</div>
+                </div>
+                <div class="skills-row">
+                    <div class="skills-label">Visualization & BI Tools:</div>
+                    <div class="skills-value">Power BI, Tableau, Advanced Excel</div>
+                </div>
+                <div class="skills-row">
+                    <div class="skills-label">Core Competencies:</div>
+                    <div class="skills-value">Data Analytics, Machine Learning Basics, Data Visualization, Problem Solving</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Projects & Learning Journey -->
+        <section>
+            <h2>Practical Projects & Learning Journey</h2>
+            
+            <div style="margin-bottom: 12px;">
+                <div class="item-header">
+                    <span class="item-title">Exploratory Data Analysis & Interactive Dashboards</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-subtitle">Python & Power BI Analytics</div>
+                <ul>
+                    <li>Performed end-to-end data cleaning, preprocessing, and exploratory analysis using Pandas and NumPy.</li>
+                    <li>Built interactive Power BI and Tableau visualization dashboards to communicate trends and analytical findings effectively.</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="item-header">
+                    <span class="item-title">Machine Learning Foundations & Predictive Modeling</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-subtitle">Scikit-learn & Python</div>
+                <ul>
+                    <li>Implemented classification and regression algorithms using Scikit-learn for datasets to understand model evaluation and metrics.</li>
+                    <li>Applied feature engineering and model training best practices to solve structured data problems.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Soft Skills & Key Strengths -->
+        <section>
+            <h2>Soft Skills & Strengths</h2>
+            <ul>
+                <li><strong>Communication & Storytelling:</strong> Ability to explain analytical data findings clearly to technical and non-technical audiences.</li>
+                <li><strong>Teamwork & Collaboration:</strong> Proven ability to work effectively in team environments and shared projects.</li>
+                <li><strong>Content Creation & Learning Agility:</strong> Continuous learner passionate about documenting and sharing tech insights.</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
