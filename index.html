@@ -177,7 +177,7 @@
                                 <div class="bg-gray-900/80 p-4 rounded-lg border border-gray-800 space-y-2">
                                     <p><span class="text-purple-400">focus_areas</span> = [<span id="typed-text" class="text-yellow-300"></span>]</p>
                                     <p><span class="text-purple-400">programme</span> = <span class="text-green-300">"PRICE ProtoSem"</span></p>
-                                    <p><span class="text-purple-400">analytics_tools</span> = [<span class="text-cyan-300">"Power BI"</span>, <span class="text-cyan-300">"Tableau"</span>, <span class="text-cyan-300">"Excel"</span>]</p>
+                                    <p><span class="text-purple-400">latest_log</span> = <span class="text-cyan-300">"Week 0: Stepping Beyond My Comfort Zone"</span></p>
                                     <p><span class="text-purple-400">status</span> = <span class="text-emerald-300">"Open to Collaborations & Learning Opportunities"</span></p>
                                 </div>
                             </div>
@@ -264,17 +264,16 @@
         </section>
 
 
-        <!-- NEW DEDICATED SECTION: PROTOSEM -->
+        <!-- DEDICATED PROTOSEM SECTION -->
         <section id="protosem" class="space-y-10 pt-6" data-aos="fade-up">
             
             <!-- Section Intro Area -->
             <div class="bento-card p-8 rounded-3xl space-y-6 relative overflow-hidden border border-brand-500/30">
-                <!-- Background Accent Glow -->
                 <div class="absolute -right-16 -top-16 w-64 h-64 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
                 <div class="space-y-3">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-500/10 border border-brand-500/30 text-brand-400 font-mono text-xs font-semibold tracking-wider uppercase">
-                        <i class="fa-solid fa-cubes text-brand-400"></i> PROTOSEM
+                        <i class="fa-solid fa-cubes text-brand-400"></i> PROTOSEM ARCHIVE
                     </div>
                     
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -295,6 +294,21 @@
                             Working with industry problem statements to explore, develop, and validate practical technology solutions beyond conventional classroom learning.
                         </p>
                     </div>
+                </div>
+
+                <!-- Featured Story Preview Widget (Week 0) -->
+                <div class="bg-gradient-to-r from-brand-900/40 via-gray-900 to-gray-900/90 p-5 rounded-2xl border border-brand-500/30 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="bg-brand-500 text-white font-mono text-[10px] font-bold px-2 py-0.5 rounded uppercase">Featured Story</span>
+                            <span class="text-xs text-brand-300 font-semibold font-mono">Week 00</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Stepping Beyond My Comfort Zone</h4>
+                        <p class="text-xs text-gray-400 line-clamp-1">Reflections from Week 0 at Forge Innovation & Ventures — Ice-breakers, Marshmallow Challenge, and RAI CEO Keynote.</p>
+                    </div>
+                    <button onclick="openBlogModal('WEEK 00')" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-xl text-xs font-semibold transition-colors shrink-0 flex items-center gap-2 shadow-md">
+                        <i class="fa-solid fa-book-open"></i> Read Full Story
+                    </button>
                 </div>
 
                 <!-- Programme Focus Disciplines / Tags -->
@@ -342,19 +356,21 @@
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div>
                         <h3 class="text-2xl font-bold text-white">The 20-Week Innovation Journey</h3>
-                        <p class="text-gray-400 text-xs mt-0.5">Chronological programme archive and future story log</p>
+                        <p class="text-gray-400 text-xs mt-0.5">Chronological programme archive and published field notes</p>
                     </div>
 
                     <!-- Programme Progress Visual Rail Indicator -->
                     <div class="hidden lg:flex items-center gap-2 font-mono text-xs text-gray-400 bg-gray-900/80 px-4 py-2 rounded-xl border border-gray-800">
+                        <span class="text-emerald-400 font-bold">00</span>
+                        <span class="w-4 h-0.5 bg-emerald-500"></span>
                         <span class="text-brand-400 font-bold">01</span>
-                        <span class="w-6 h-0.5 bg-brand-500"></span>
+                        <span class="w-4 h-0.5 bg-brand-500"></span>
                         <span class="text-gray-300">05</span>
-                        <span class="w-6 h-0.5 bg-gray-700"></span>
+                        <span class="w-4 h-0.5 bg-gray-700"></span>
                         <span class="text-gray-300">10</span>
-                        <span class="w-6 h-0.5 bg-gray-700"></span>
+                        <span class="w-4 h-0.5 bg-gray-700"></span>
                         <span class="text-gray-300">15</span>
-                        <span class="w-6 h-0.5 bg-gray-700"></span>
+                        <span class="w-4 h-0.5 bg-gray-700"></span>
                         <span class="text-gray-300">20</span>
                     </div>
                 </div>
@@ -362,10 +378,10 @@
                 <!-- Phase Filter Navigation Buttons -->
                 <div class="flex flex-wrap items-center gap-2 p-1.5 bg-gray-900/90 rounded-xl border border-gray-800 text-xs font-medium">
                     <button onclick="filterPhase('ALL')" id="phase-btn-ALL" class="phase-btn active px-4 py-2 rounded-lg border border-transparent transition-all">
-                        ALL (WEEKS 01–20)
+                        ALL (WEEKS 00–20)
                     </button>
                     <button onclick="filterPhase(1)" id="phase-btn-1" class="phase-btn text-gray-400 hover:text-white px-4 py-2 rounded-lg border border-transparent transition-all">
-                        PHASE 01 (01–05)
+                        PHASE 01 (00–05)
                     </button>
                     <button onclick="filterPhase(2)" id="phase-btn-2" class="phase-btn text-gray-400 hover:text-white px-4 py-2 rounded-lg border border-transparent transition-all">
                         PHASE 02 (06–10)
@@ -380,7 +396,7 @@
 
                 <!-- 20 Week Cards Container -->
                 <div id="protosem-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    <!-- Week Cards will be rendered dynamically by JavaScript -->
+                    <!-- Week Cards rendered dynamically -->
                 </div>
 
             </div>
@@ -459,7 +475,105 @@
 
     </main>
 
-    <!-- Modal Notification for Week Cards -->
+    <!-- FULL BLOG STORY MODAL READER (Week 0 Story) -->
+    <div id="blog-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md hidden p-4 overflow-y-auto">
+        <div class="bg-darkCard border border-brand-500/40 my-8 p-6 sm:p-8 rounded-3xl max-w-3xl w-full space-y-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            
+            <!-- Close Button -->
+            <button onclick="closeBlogModal()" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Blog Header -->
+            <div class="space-y-3 border-b border-gray-800 pb-6">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded bg-brand-500/20 text-brand-300 font-mono text-xs font-bold uppercase border border-brand-500/30">
+                        PRICE PROTOSEM ARCHIVE
+                    </span>
+                    <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-mono text-xs font-bold uppercase border border-emerald-500/30">
+                        WEEK 00 &bull; PUBLISHED
+                    </span>
+                </div>
+                
+                <h2 id="blog-title" class="text-2xl sm:text-3xl font-extrabold text-white leading-snug">
+                    Week 0 at PRICE Protosem: Stepping Beyond My Comfort Zone
+                </h2>
+
+                <div class="flex flex-wrap items-center gap-4 text-xs text-gray-400 font-mono">
+                    <span><i class="fa-solid fa-building text-brand-400"></i> Forge Innovation & Ventures</span>
+                    <span><i class="fa-solid fa-clock text-brand-400"></i> ~3 Min Read</span>
+                    <span><i class="fa-solid fa-user text-brand-400"></i> Rubishna Kuppusamy</span>
+                </div>
+            </div>
+
+            <!-- Blog Content Body -->
+            <div id="blog-body" class="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
+                <p>
+                    Starting something new often comes with a mix of excitement, uncertainty, and curiosity. <b>Week 0 of the PRICE Protosem at Forge Innovation & Ventures</b> was exactly that—a week of stepping outside my comfort zone, meeting new people, and discovering something new every day.
+                </p>
+
+                <p>
+                    The week began with ice-breakers and team activities that helped us connect with one another and become more comfortable as a group. These activities may have seemed simple at first, but they taught us important lessons about communication, teamwork, and building connections with people from different backgrounds.
+                </p>
+
+                <div class="p-4 bg-gray-900/90 rounded-2xl border-l-4 border-brand-500 space-y-2">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                        <i class="fa-brands fa-linkedin text-blue-400"></i> Professional Branding & Personal Assessment
+                    </h4>
+                    <p class="text-xs text-gray-300">
+                        One of the highlights of the week was the <b>LinkedIn session</b>, which provided valuable insights into building a professional presence and presenting ourselves effectively in the digital world. The <b>personality assessment</b> was another interesting experience, encouraging us to reflect on our strengths, characteristics, and areas where we can improve.
+                    </p>
+                </div>
+
+                <div class="p-4 bg-gray-900/90 rounded-2xl border-l-4 border-purple-500 space-y-2">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-pen-nib text-purple-400"></i> Storytelling & Creative Expression
+                    </h4>
+                    <p class="text-xs text-gray-300">
+                        The <b>Zen Pencils storytelling session</b> was particularly engaging. It showed us how powerful storytelling can be in communicating ideas and connecting with an audience. It encouraged us to think creatively and express our thoughts in a more meaningful way.
+                    </p>
+                </div>
+
+                <div class="p-4 bg-gray-900/90 rounded-2xl border-l-4 border-amber-500 space-y-2">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-lightbulb text-amber-400"></i> The Marshmallow Challenge
+                    </h4>
+                    <p class="text-xs text-gray-300">
+                        Another memorable activity was the <b>Marshmallow Challenge</b>. What appeared to be a simple team-building exercise turned into a practical lesson in creativity, experimentation, communication, and problem-solving. It reminded us that successful teamwork is not always about having the perfect plan, but about being willing to test ideas, learn from mistakes, and adapt along the way.
+                    </p>
+                </div>
+
+                <blockquote class="p-4 bg-brand-950/40 rounded-2xl border border-brand-500/30 text-brand-200 text-xs italic space-y-1">
+                    <p class="font-bold text-white not-italic"><i class="fa-solid fa-quote-left text-brand-400"></i> Inaugural Session Keynote</p>
+                    <p>
+                        A special highlight was the inaugural session by <b>Mr. Kumar Rajagopalan, CEO of the Retailers Association of India (RAI)</b>. His insights into the retail industry provided us with a broader perspective on the sector and helped us understand the importance of innovation, adaptability, and understanding changing consumer needs.
+                    </p>
+                </blockquote>
+
+                <p>
+                    Looking back, Week 0 was more than just an introduction to the programme. It was an opportunity to learn about myself, understand others, and experience different ways of thinking and working together.
+                </p>
+
+                <p class="font-semibold text-white pt-2 border-t border-gray-800">
+                    I am grateful for the experiences, conversations, and connections from this first week. More importantly, I am excited to continue this journey and make the most of the 20-week PRICE Protosem experience ahead.
+                </p>
+
+                <div class="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-center text-emerald-300 text-xs font-semibold">
+                    ✨ Week 0 was just the beginning—and I am looking forward to everything that comes next.
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="pt-4 border-t border-gray-800 flex justify-end">
+                <button onclick="closeBlogModal()" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition-colors">
+                    Close Story Reader
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Standard Placeholder Modal for Future Weeks -->
     <div id="week-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden p-4">
         <div class="bg-darkCard border border-brand-500/40 p-6 rounded-2xl max-w-md w-full space-y-4 text-center shadow-2xl relative">
             <div class="w-12 h-12 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mx-auto text-xl border border-brand-500/30">
@@ -487,13 +601,11 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     
     <script>
-        // Initialize AOS Scroll Animations
         AOS.init({
             duration: 800,
             once: true
         });
 
-        // Initialize Typed.js for Terminal Hero Section
         var typed = new Typed('#typed-text', {
             strings: [
                 '"Data Science"',
@@ -508,20 +620,32 @@
             loop: true
         });
 
-        // PROTOSEM 20-WEEK ARCHIVE DATA STRUCTURE
-        const protoSemWeeks = Array.from({ length: 20 }, (_, i) => {
-            const weekNum = i + 1;
-            const phaseNum = Math.ceil(weekNum / 5);
-            const formattedWeek = weekNum < 10 ? `0${weekNum}` : `${weekNum}`;
-            return {
-                week: weekNum,
-                formattedWeek: `WEEK ${formattedWeek}`,
-                phase: phaseNum,
-                slug: `week-${formattedWeek}`,
-                status: "FIELD NOTES IN PROGRESS",
-                tooltip: "This is a future story / blog chapter."
-            };
-        });
+        // PROTOSEM 20-WEEK ARCHIVE DATA STRUCTURE (Including Week 00 Story)
+        const protoSemWeeks = [
+            {
+                week: 0,
+                formattedWeek: "WEEK 00",
+                phase: 1,
+                slug: "week-00",
+                status: "PUBLISHED STORY",
+                title: "Stepping Beyond My Comfort Zone",
+                isPublished: true
+            },
+            ...Array.from({ length: 20 }, (_, i) => {
+                const weekNum = i + 1;
+                const phaseNum = Math.ceil(weekNum / 5);
+                const formattedWeek = weekNum < 10 ? `0${weekNum}` : `${weekNum}`;
+                return {
+                    week: weekNum,
+                    formattedWeek: `WEEK ${formattedWeek}`,
+                    phase: phaseNum,
+                    slug: `week-${formattedWeek}`,
+                    status: "FIELD NOTES IN PROGRESS",
+                    title: "",
+                    isPublished: false
+                };
+            })
+        ];
 
         // Render Week Cards dynamically
         function renderWeekCards(phaseFilter = 'ALL') {
@@ -534,8 +658,23 @@
 
             filtered.forEach(item => {
                 const card = document.createElement('div');
-                card.className = "week-card bento-card p-5 rounded-2xl flex flex-col justify-between cursor-pointer group hover:border-brand-500/60 relative overflow-hidden";
-                card.onclick = () => openWeekModal(item.formattedWeek);
+                card.className = `week-card bento-card p-5 rounded-2xl flex flex-col justify-between cursor-pointer group relative overflow-hidden ${item.isPublished ? 'border-brand-500/80 bg-brand-950/20' : 'hover:border-brand-500/60'}`;
+                
+                card.onclick = () => {
+                    if (item.isPublished) {
+                        openBlogModal(item.formattedWeek);
+                    } else {
+                        openWeekModal(item.formattedWeek);
+                    }
+                };
+
+                const statusBadge = item.isPublished
+                    ? `<span class="text-[11px] font-mono text-emerald-400 font-bold uppercase tracking-wider flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> READ STORY</span>`
+                    : `<span class="text-[11px] font-mono text-gray-400 uppercase tracking-wider flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> ${item.status}</span>`;
+
+                const actionLink = item.isPublished
+                    ? `<span class="text-brand-300 font-semibold flex items-center gap-1">Read Story &rarr;</span>`
+                    : `<span>Future Story &rarr;</span>`;
 
                 card.innerHTML = `
                     <div class="space-y-3">
@@ -543,20 +682,19 @@
                             <span class="text-xs font-mono font-semibold text-brand-400 px-2 py-0.5 rounded bg-brand-500/10 border border-brand-500/20">
                                 Phase 0${item.phase}
                             </span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-500 week-arrow transition-transform"></i>
+                            <i class="fa-solid ${item.isPublished ? 'fa-book-open text-brand-400' : 'fa-arrow-up-right-from-square text-gray-500'} text-xs week-arrow transition-transform"></i>
                         </div>
                         <div>
                             <h4 class="text-xl font-extrabold text-white group-hover:text-brand-300 transition-colors">
                                 ${item.formattedWeek}
                             </h4>
-                            <p class="text-[11px] font-mono text-gray-400 mt-1 uppercase tracking-wider flex items-center gap-1.5">
-                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> ${item.status}
-                            </p>
+                            ${item.title ? `<p class="text-xs font-semibold text-brand-200 line-clamp-1 mt-0.5">${item.title}</p>` : ''}
+                            <div class="mt-1.5">${statusBadge}</div>
                         </div>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-800/60 flex items-center justify-between text-[11px] text-gray-500 font-mono">
                         <span>Archive Node</span>
-                        <span class="group-hover:text-gray-300 transition-colors">Future Story &rarr;</span>
+                        <span class="group-hover:text-gray-300 transition-colors">${actionLink}</span>
                     </div>
                 `;
                 container.appendChild(card);
@@ -571,7 +709,16 @@
             renderWeekCards(phase);
         }
 
-        // Modal Functions
+        // Blog Modal Reader Functions
+        function openBlogModal(weekTitle) {
+            document.getElementById('blog-modal').classList.remove('hidden');
+        }
+
+        function closeBlogModal() {
+            document.getElementById('blog-modal').classList.add('hidden');
+        }
+
+        // Standard Placeholder Modal Functions
         function openWeekModal(weekTitle) {
             document.getElementById('modal-title').innerText = weekTitle;
             document.getElementById('modal-msg').innerText = `Field notes for ${weekTitle} are currently in progress. Detailed story logs and project archives will be published soon!`;
