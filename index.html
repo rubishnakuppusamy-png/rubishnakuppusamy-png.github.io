@@ -1698,54 +1698,94 @@
         </div>
         <!-- End of WEEK 05 CONTENT -->
 
-        <!-- WEEK 06 CONTENT -->
+                <!-- WEEK 06 CONTENT -->
         <div id="blog-content-WEEK06" class="blog-section hidden">
             <!-- Blog Header -->
-            <div class="space-y-3 border-b border-gray-800 pb-6">
-                <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded bg-brand-500/20 text-brand-300 font-mono text-xs font-bold uppercase border border-brand-500/30">
-                        PRICE PROTOSEM ARCHIVE
-                    </span>
-                    <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-mono text-xs font-bold uppercase border border-emerald-500/30">
-                        PHASE 02 &bull; WEEK 06 &bull; PUBLISHED
-                    </span>
+            <div class="space-y-4 border-b border-gray-800 pb-6">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="px-2.5 py-1 rounded bg-brand-500/20 text-brand-300 font-mono text-xs font-bold uppercase border border-brand-500/30">
+                            PRICE PROTOSEM ARCHIVE
+                        </span>
+                        <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-mono text-xs font-bold uppercase border border-emerald-500/30">
+                            PHASE 02 &bull; WEEK 06 &bull; PUBLISHED
+                        </span>
+                    </div>
+                    <div id="w6-page-indicator" class="text-xs font-mono font-semibold px-3 py-1 rounded-full bg-emerald-950/40 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span id="w6-page-indicator-text">Page 1 of 3</span>
+                    </div>
                 </div>
                 
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-snug">
-                    Week 06: Laser Cutting & 3D Printing
-                </h2>
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-snug">
+                        Week 06: Laser Cutting & 3D Printing
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-400 font-mono mt-1">
+                        Digital Fabrication, RDWorks V8, Bambu Studio Slicing & Machine Manufacturing
+                    </p>
+                </div>
 
                 <div class="flex flex-wrap items-center gap-4 text-xs text-gray-400 font-mono">
                     <span><i class="fa-solid fa-industry text-emerald-400"></i> Digital Fabrication & Prototyping</span>
                     <span><i class="fa-solid fa-clock text-emerald-400"></i> ~6 Min Read</span>
                     <span><i class="fa-solid fa-user text-emerald-400"></i> Rubishna Kuppusamy</span>
                 </div>
+
+                <!-- 3-Page Tab Navigation Controls -->
+                <div class="pt-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 p-1.5 bg-gray-900/90 rounded-2xl border border-gray-800 text-xs sm:text-sm font-semibold font-mono">
+                        <button type="button" id="w6-tab-1" onclick="switchWeek6Page(1)" class="week6-tab-btn flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl transition-all duration-300 bg-emerald-500 text-white border border-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
+                            <i class="fa-solid fa-bolt-lightning text-xs"></i>
+                            <span>Page 1: Laser Cutting</span>
+                        </button>
+                        <button type="button" id="w6-tab-2" onclick="switchWeek6Page(2)" class="week6-tab-btn flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl transition-all duration-300 bg-gray-800/80 text-gray-400 hover:text-white border border-gray-700/60">
+                            <i class="fa-solid fa-cubes-stacked text-xs"></i>
+                            <span>Page 2: 3D Printing</span>
+                        </button>
+                        <button type="button" id="w6-tab-3" onclick="switchWeek6Page(3)" class="week6-tab-btn flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl transition-all duration-300 bg-gray-800/80 text-gray-400 hover:text-white border border-gray-700/60">
+                            <i class="fa-solid fa-layer-group text-xs"></i>
+                            <span>Page 3: Everything Included</span>
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <!-- Blog Content Body -->
-            <div class="space-y-6 text-gray-300 text-sm sm:text-base leading-relaxed pt-6" style="font-family: 'Inter', sans-serif;">
-                <p class="text-gray-300">
-                    Week 06 of my ProtoSem journey focused on <b>digital fabrication using laser cutting and 3D printing</b>. I explored how computational and 2D/3D digital designs are systematically converted into physical reality using industry-grade tools including <b>RDWorks V8</b> and <b>Bambu Studio</b>.
+            <!-- ==================== PAGE 1: LASER CUTTING ==================== -->
+            <div id="w6-page-1" class="week6-page space-y-6 pt-6">
+                <!-- Page 1 Banner -->
+                <div class="p-4 rounded-xl bg-gradient-to-r from-emerald-950/40 via-cyan-950/20 to-gray-900 border border-emerald-500/30 flex items-center justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono uppercase tracking-wider text-emerald-400 font-bold block">Page 1 of 3 &bull; Subtractive Manufacturing</span>
+                        <h3 class="text-lg font-bold text-white mt-0.5">Laser Cutting & Vector Acrylic Fabrication</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                </div>
+
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                    Laser cutting utilizes a concentrated, high-energy laser beam to cleanly cut or engrave substrates with micrometer-level precision. In Week 06, I learned the physics of laser optics and how to translate 2D vector illustrations into precision-cut and engraved physical acrylic components using <b>RDWorks V8</b>.
                 </p>
 
-                <!-- Professional Journey Timeline -->
-                <div class="relative pl-6 sm:pl-8 border-l border-gray-700/50 space-y-8 my-8">
+                <!-- Professional Journey Timeline for Laser Cutting -->
+                <div class="relative pl-6 sm:pl-8 border-l border-emerald-500/30 space-y-8 my-8">
                     
-                    <!-- 01. Laser Cutting Fundamentals -->
+                    <!-- Step 01: Laser Cutting & Optics Fundamentals -->
                     <div class="relative group">
                         <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-emerald-400 group-hover:bg-emerald-400 transition-colors z-10 shadow-[0_0_10px_rgba(16,185,129,0.4)]"></div>
                         <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
                             <div class="flex items-center gap-3 mb-3">
                                 <div class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20">
-                                    <i class="fa-solid fa-bolt-lightning text-lg"></i>
+                                    <i class="fa-solid fa-atom text-lg"></i>
                                 </div>
                                 <div>
-                                    <span class="text-xs font-mono text-emerald-400 uppercase font-semibold">Step 01</span>
-                                    <h4 class="text-white font-semibold text-base">Laser Cutting & Optics Fundamentals</h4>
+                                    <span class="text-xs font-mono text-emerald-400 uppercase font-semibold">Concept 01</span>
+                                    <h4 class="text-white font-semibold text-base">Laser Optics & Machine Physics</h4>
                                 </div>
                             </div>
                             <p class="text-gray-400 text-sm leading-relaxed mb-3">
-                                Laser cutting utilizes a concentrated, coherent laser beam to cleanly cut or engrave substrates with micrometer-level precision. I learned the core operational physics governing laser machinery:
+                                The laser cutting process is governed by fundamental optical and mechanical parameters:
                             </p>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs mb-3">
                                 <div class="p-3 rounded-xl bg-gray-900/60 border border-gray-700/50">
@@ -1768,7 +1808,7 @@
                         </div>
                     </div>
 
-                    <!-- 02. RDWorks V8 Workflow & DXF Preparation -->
+                    <!-- Step 02: RDWorks V8 Workflow & DXF Preparation -->
                     <div class="relative group">
                         <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-cyan-400 group-hover:bg-cyan-400 transition-colors z-10 shadow-[0_0_10px_rgba(34,211,238,0.4)]"></div>
                         <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -1777,12 +1817,12 @@
                                     <i class="fa-solid fa-pen-ruler text-lg"></i>
                                 </div>
                                 <div>
-                                    <span class="text-xs font-mono text-cyan-400 uppercase font-semibold">Step 02</span>
+                                    <span class="text-xs font-mono text-cyan-400 uppercase font-semibold">Workflow 02</span>
                                     <h4 class="text-white font-semibold text-base">RDWorks V8 Workflow & DXF Preparation</h4>
                                 </div>
                             </div>
                             <p class="text-gray-400 text-sm leading-relaxed mb-3">
-                                In <b>RDWorks V8</b>, I implemented the structured digital-to-laser preparation pipeline:
+                                In <b>RDWorks V8</b>, I followed the complete digital preparation workflow:
                             </p>
                             <!-- Workflow Pipeline Chips -->
                             <div class="p-3 bg-cyan-950/20 border border-cyan-500/20 rounded-xl mb-3 flex flex-wrap items-center gap-1.5 text-[11px] sm:text-xs font-mono text-cyan-200">
@@ -1801,7 +1841,7 @@
                                 <span class="bg-emerald-900/40 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30 font-semibold">Laser Cutting</span>
                             </div>
                             <p class="text-gray-400 text-xs leading-relaxed mb-3">
-                                I selected a cute kitten graphic carrying a personalized heart badge inscribed with <b>"RUBI"</b>, transformed raster curves into clean vector geometry, imported the resulting <b>DXF file</b> into RDWorks, calibrated layer speeds for dual-action engraving and perimeter cutting, and verified the head simulation toolpath.
+                                I converted a selected kitten illustration into a clean <b>DXF vector file</b>, imported it into RDWorks, adjusted its dimensions and canvas placement, calibrated independent speed and power settings for engraving vs perimeter cutting, and verified the laser head simulation path before sending it to the cutter.
                             </p>
                             <div class="mt-4 bg-gray-900/60 p-2.5 rounded-xl border border-cyan-500/20">
                                 <img src="assets/images/week6/laser-cut-dxf-design.png" alt="2D Vector DXF Design for Laser Engraving and Cutting" class="w-full h-48 object-contain bg-black rounded-lg shadow-sm hover:scale-[1.01] transition-transform">
@@ -1810,7 +1850,7 @@
                         </div>
                     </div>
 
-                    <!-- 03. Acrylic Laser Cutting & Fabrication Result -->
+                    <!-- Step 03: Acrylic Laser Cutting & Fabrication Result -->
                     <div class="relative group">
                         <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-teal-400 group-hover:bg-teal-400 transition-colors z-10 shadow-[0_0_10px_rgba(45,212,191,0.4)]"></div>
                         <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -1819,12 +1859,12 @@
                                     <i class="fa-solid fa-gem text-lg"></i>
                                 </div>
                                 <div>
-                                    <span class="text-xs font-mono text-teal-400 uppercase font-semibold">Step 03</span>
+                                    <span class="text-xs font-mono text-teal-400 uppercase font-semibold">Output 03</span>
                                     <h4 class="text-white font-semibold text-base">Acrylic Fabrication & Engraving Outcome</h4>
                                 </div>
                             </div>
                             <p class="text-gray-400 text-sm leading-relaxed mb-3">
-                                After securing the transparent acrylic sheet, calibrating laser nozzle focal distance, and enabling air assist, the machine executed the dual-layer program: deeply raster-etching the fine white fur and lettering details followed by a crisp perimeter vector cut.
+                                After securing the transparent acrylic sheet, calibrating the laser nozzle focal distance, and enabling air assist, the machine executed the dual-layer program: deeply raster-etching the fine white fur and lettering details followed by a crisp perimeter vector cut. The final acrylic piece achieved razor-sharp edge polish and distinct contrast.
                             </p>
                             <div class="mt-4 bg-gray-900/60 p-2.5 rounded-xl border border-teal-500/20">
                                 <img src="assets/images/week6/laser-cut-acrylic-rubi.png" alt="Laser cut and engraved acrylic badge piece" class="w-full h-64 object-contain bg-gray-950/60 rounded-lg shadow-md hover:scale-[1.01] transition-transform">
@@ -1833,21 +1873,53 @@
                         </div>
                     </div>
 
-                    <!-- 04. 3D Printing & Slicing in Bambu Studio -->
+                </div>
+
+                <!-- Page 1 Bottom Navigation Bar -->
+                <div class="p-4 bg-gray-900/80 rounded-2xl border border-gray-800 flex flex-wrap items-center justify-between gap-3 font-mono text-xs">
+                    <span class="text-gray-400">Page 1 of 3 completed</span>
+                    <button type="button" onclick="switchWeek6Page(2)" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-semibold transition-all shadow-md hover:shadow-emerald-500/20">
+                        <span>Next: Page 2 (3D Printing)</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ==================== PAGE 2: 3D PRINTING ==================== -->
+            <div id="w6-page-2" class="week6-page space-y-6 pt-6 hidden">
+                <!-- Page 2 Banner -->
+                <div class="p-4 rounded-xl bg-gradient-to-r from-amber-950/40 via-indigo-950/20 to-gray-900 border border-amber-500/30 flex items-center justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono uppercase tracking-wider text-amber-400 font-bold block">Page 2 of 3 &bull; Additive Manufacturing</span>
+                        <h3 class="text-lg font-bold text-white mt-0.5">3D Printing & Bambu Studio Slicing</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                </div>
+
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                    3D printing builds physical 3-dimensional objects by depositing heated thermoplastic filament layer upon layer from computational slice files. In Week 06, I learned how <b>Bambu Studio</b> prepares 3D models for additive manufacturing, optimizing print parameters, orientation, and organic tree support structures for flawless results on the <b>Bambu Lab H2S</b> 3D printer.
+                </p>
+
+                <!-- Professional Journey Timeline for 3D Printing -->
+                <div class="relative pl-6 sm:pl-8 border-l border-amber-500/30 space-y-8 my-8">
+                    
+                    <!-- Step 01: Slicing Workflow in Bambu Studio -->
                     <div class="relative group">
                         <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-amber-400 group-hover:bg-amber-400 transition-colors z-10 shadow-[0_0_10px_rgba(251,191,36,0.4)]"></div>
                         <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
                             <div class="flex items-center gap-3 mb-3">
                                 <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 border border-amber-500/20">
-                                    <i class="fa-solid fa-cubes-stacked text-lg"></i>
+                                    <i class="fa-solid fa-sliders text-lg"></i>
                                 </div>
                                 <div>
-                                    <span class="text-xs font-mono text-amber-400 uppercase font-semibold">Step 04</span>
-                                    <h4 class="text-white font-semibold text-base">3D Printing Workflow in Bambu Studio</h4>
+                                    <span class="text-xs font-mono text-amber-400 uppercase font-semibold">Workflow 01</span>
+                                    <h4 class="text-white font-semibold text-base">Bambu Studio Slicing & Tree Supports</h4>
                                 </div>
                             </div>
                             <p class="text-gray-400 text-sm leading-relaxed mb-3">
-                                <b>Bambu Studio</b> is a high-performance slicer that converts complex 3D CAD geometries into machine-readable G-code layer paths.
+                                <b>Bambu Studio</b> converts 3D mesh CAD models into G-code toolpaths following the structured preparation sequence:
                             </p>
                             <!-- Workflow Pipeline Chips -->
                             <div class="p-3 bg-amber-950/20 border border-amber-500/20 rounded-xl mb-3 flex flex-wrap items-center gap-1.5 text-[11px] sm:text-xs font-mono text-amber-200">
@@ -1859,7 +1931,7 @@
                                 <i class="fa-solid fa-chevron-right text-gray-500 text-[10px]"></i>
                                 <span class="bg-amber-900/40 px-2 py-0.5 rounded border border-amber-500/30 font-semibold">Orient</span>
                                 <i class="fa-solid fa-chevron-right text-gray-500 text-[10px]"></i>
-                                <span class="bg-amber-900/40 px-2 py-0.5 rounded border border-amber-500/30 font-semibold">Supports</span>
+                                <span class="bg-amber-900/40 px-2 py-0.5 rounded border border-amber-500/30 font-semibold">Tree Supports</span>
                                 <i class="fa-solid fa-chevron-right text-gray-500 text-[10px]"></i>
                                 <span class="bg-amber-900/40 px-2 py-0.5 rounded border border-amber-500/30 font-semibold">Parameters</span>
                                 <i class="fa-solid fa-chevron-right text-gray-500 text-[10px]"></i>
@@ -1895,7 +1967,7 @@
                         </div>
                     </div>
 
-                    <!-- 05. Bambu Lab Machine Operation -->
+                    <!-- Step 02: Bambu Lab Machine Operation -->
                     <div class="relative group">
                         <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-indigo-400 group-hover:bg-indigo-400 transition-colors z-10 shadow-[0_0_10px_rgba(99,102,241,0.4)]"></div>
                         <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -1904,7 +1976,7 @@
                                     <i class="fa-solid fa-microchip text-lg"></i>
                                 </div>
                                 <div>
-                                    <span class="text-xs font-mono text-indigo-400 uppercase font-semibold">Step 05</span>
+                                    <span class="text-xs font-mono text-indigo-400 uppercase font-semibold">Operation 02</span>
                                     <h4 class="text-white font-semibold text-base">Bambu Lab H2S Fabrication & Operation</h4>
                                 </div>
                             </div>
@@ -1928,7 +2000,7 @@
                         </div>
                     </div>
 
-                    <!-- 06. Final 3D Prototype Result -->
+                    <!-- Step 03: Final 3D Prototype Result -->
                     <div class="relative group">
                         <div class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-darkCard border-2 border-brand-400 group-hover:bg-brand-400 transition-colors z-10 shadow-[0_0_10px_rgba(139,92,246,0.4)]"></div>
                         <div class="bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-md rounded-2xl p-5 border border-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -1937,7 +2009,7 @@
                                     <i class="fa-solid fa-trophy text-lg"></i>
                                 </div>
                                 <div>
-                                    <span class="text-xs font-mono text-brand-400 uppercase font-semibold">Step 06</span>
+                                    <span class="text-xs font-mono text-brand-400 uppercase font-semibold">Output 03</span>
                                     <h4 class="text-white font-semibold text-base">Finished Physical 3D Prototype</h4>
                                 </div>
                             </div>
@@ -1953,7 +2025,132 @@
 
                 </div>
 
-                <!-- Key Learnings Matrix -->
+                <!-- Page 2 Bottom Navigation Bar -->
+                <div class="p-4 bg-gray-900/80 rounded-2xl border border-gray-800 flex flex-wrap items-center justify-between gap-3 font-mono text-xs">
+                    <button type="button" onclick="switchWeek6Page(1)" class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 px-4 py-2.5 rounded-xl font-semibold transition-all border border-gray-700">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Previous: Page 1 (Laser Cutting)</span>
+                    </button>
+                    <button type="button" onclick="switchWeek6Page(3)" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-semibold transition-all shadow-md hover:shadow-emerald-500/20">
+                        <span>Next: Page 3 (Everything Included)</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ==================== PAGE 3: EVERYTHING INCLUDED ==================== -->
+            <div id="w6-page-3" class="week6-page space-y-8 pt-6 hidden">
+                <!-- Page 3 Banner -->
+                <div class="p-4 rounded-xl bg-gradient-to-r from-emerald-950/40 via-purple-950/30 to-brand-950/40 border border-brand-500/30 flex items-center justify-between">
+                    <div>
+                        <span class="text-[10px] font-mono uppercase tracking-wider text-brand-300 font-bold block">Page 3 of 3 &bull; Master Project Archive</span>
+                        <h3 class="text-lg font-bold text-white mt-0.5">Complete Digital Fabrication Master Archive (Everything Included)</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                </div>
+
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed" style="font-family: 'Inter', sans-serif;">
+                    This master archive unifies the complete Week 06 journey across both subtractive fabrication (Laser Cutting) and additive manufacturing (3D Printing). It showcases the end-to-end transformation of 2D/3D computational designs into physical functional prototypes.
+                </p>
+
+                <!-- SECTION A: LASER CUTTING RECAP & ARTIFACTS -->
+                <div class="p-5 rounded-2xl bg-gray-800/30 border border-emerald-500/20 space-y-4">
+                    <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs font-bold uppercase">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                        <span>Section A &bull; Laser Cutting & Vector Acrylic Fabrication</span>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                        Converted vector graphics to DXF format, prepared toolpaths in <b>RDWorks V8</b>, calibrated focal waist and air assist, and fabricated the personalized <b>"RUBI"</b> acrylic badge with high-contrast raster engraving and clean vector perimeter cuts.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-gray-900/60 p-2.5 rounded-xl border border-emerald-500/20">
+                            <img src="assets/images/week6/laser-cut-dxf-design.png" alt="2D Vector DXF Design in RDWorks V8" class="w-full h-44 object-contain bg-black rounded-lg shadow-sm">
+                            <p class="text-[11px] text-emerald-300 font-mono mt-1.5 text-center">1. Vector DXF Design in RDWorks V8</p>
+                        </div>
+                        <div class="bg-gray-900/60 p-2.5 rounded-xl border border-emerald-500/20">
+                            <img src="assets/images/week6/laser-cut-acrylic-rubi.png" alt="Laser cut and engraved acrylic badge piece" class="w-full h-44 object-contain bg-gray-950/60 rounded-lg shadow-sm">
+                            <p class="text-[11px] text-emerald-300 font-mono mt-1.5 text-center">2. Finished Cut & Engraved Acrylic Piece</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION B: 3D PRINTING RECAP & ARTIFACTS -->
+                <div class="p-5 rounded-2xl bg-gray-800/30 border border-amber-500/20 space-y-4">
+                    <div class="flex items-center gap-2 text-amber-400 font-mono text-xs font-bold uppercase">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                        <span>Section B &bull; 3D Printing & Bambu Studio Slicing</span>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                        Slicing 3D CAD meshes in <b>Bambu Studio</b> with organic tree supports, optimizing 0.20 mm layer stacking, calibrating the <b>Bambu Lab H2S</b> with <b>AMS 2</b>, and achieving high-fidelity physical deposition of the kitten figurine.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        <div class="bg-gray-900/60 p-2 rounded-xl border border-amber-500/20">
+                            <img src="assets/images/week6/bambu-studio-cat-slicing.png" alt="Bambu Studio Slicing" class="w-full h-36 object-contain bg-gray-950/80 rounded-lg">
+                            <p class="text-[10px] text-amber-300 font-mono mt-1 text-center">Slicing & Tree Supports</p>
+                        </div>
+                        <div class="bg-gray-900/60 p-2 rounded-xl border border-amber-500/20">
+                            <img src="assets/images/week6/bambu-lab-h2s-printer.png" alt="Bambu Lab H2S Printer" class="w-full h-36 object-cover rounded-lg">
+                            <p class="text-[10px] text-amber-300 font-mono mt-1 text-center">Bambu Lab H2S + AMS 2</p>
+                        </div>
+                        <div class="bg-gray-900/60 p-2 rounded-xl border border-amber-500/20">
+                            <img src="assets/images/week6/bambu-lab-printing-in-action.png" alt="Printing in Action" class="w-full h-36 object-cover rounded-lg">
+                            <p class="text-[10px] text-amber-300 font-mono mt-1 text-center">Active Layer Deposition</p>
+                        </div>
+                        <div class="bg-gray-900/60 p-2 rounded-xl border border-amber-500/20">
+                            <img src="assets/images/week6/3d-printed-cat-figurine.png" alt="Finished 3D Printed Kitten" class="w-full h-36 object-contain bg-gray-950/80 rounded-lg">
+                            <p class="text-[10px] text-amber-300 font-mono mt-1 text-center">Final 3D Printed Kitten</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION C: TECHNOLOGY COMPARISON MATRIX -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-base flex items-center gap-2">
+                        <i class="fa-solid fa-code-compare text-brand-400"></i> Digital Fabrication Comparison: Subtractive vs. Additive
+                    </h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs font-mono text-left border border-gray-800 rounded-xl overflow-hidden">
+                            <thead class="bg-gray-900/90 text-brand-300 border-b border-gray-800">
+                                <tr>
+                                    <th class="p-3">Parameter</th>
+                                    <th class="p-3 text-emerald-400">Laser Cutting (RDWorks V8)</th>
+                                    <th class="p-3 text-amber-400">3D Printing (Bambu Studio)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-800 text-gray-300 bg-gray-950/40">
+                                <tr>
+                                    <td class="p-3 font-semibold text-white">Fabrication Type</td>
+                                    <td class="p-3">Subtractive (Material vaporized by laser)</td>
+                                    <td class="p-3">Additive (Material deposited layer-by-layer)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-semibold text-white">Primary Software</td>
+                                    <td class="p-3">RDWorks V8 (2D Vector DXF Engine)</td>
+                                    <td class="p-3">Bambu Studio (3D Mesh G-code Slicer)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-semibold text-white">Materials Used</td>
+                                    <td class="p-3">Acrylic sheets, Wood, MDF, Leather</td>
+                                    <td class="p-3">PLA Basic, PETG, ABS, TPU Filament</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-semibold text-white">Dimensional Scope</td>
+                                    <td class="p-3">2D profiles, surface raster engraving</td>
+                                    <td class="p-3">Complex volumetric 3D organic geometries</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-semibold text-white">Production Speed</td>
+                                    <td class="p-3">Minutes (High-speed optical traversal)</td>
+                                    <td class="p-3">1 to several hours depending on height & resolution</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- SECTION D: KEY LEARNINGS MATRIX -->
                 <div class="space-y-3 pt-2">
                     <h4 class="text-white font-bold text-base flex items-center gap-2">
                         <i class="fa-solid fa-graduation-cap text-emerald-400"></i> Key Digital Fabrication Takeaways
@@ -1986,8 +2183,8 @@
                     </div>
                 </div>
 
-                <!-- Featured Card: Reflection & Takeaway -->
-                <div class="relative bg-gradient-to-br from-emerald-900/40 via-gray-900 to-gray-900 p-[1px] rounded-2xl my-8 overflow-hidden group hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] transition-all duration-500">
+                <!-- SECTION E: FEATURED CARD: REFLECTION & TAKEAWAY -->
+                <div class="relative bg-gradient-to-br from-emerald-900/40 via-gray-900 to-gray-900 p-[1px] rounded-2xl my-6 overflow-hidden group hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] transition-all duration-500">
                     <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="bg-darkCard/90 backdrop-blur-xl p-6 sm:p-8 rounded-2xl relative">
                         <div class="space-y-4">
@@ -2010,8 +2207,21 @@
                     </div>
                 </div>
 
+                <!-- SECTION F: PHASE 2 MILESTONE BANNER -->
                 <div class="p-4 bg-gradient-to-r from-emerald-500/10 via-cyan-500/10 to-brand-500/10 border border-emerald-500/30 rounded-xl text-center text-emerald-300 text-xs sm:text-sm font-medium tracking-wide shadow-[0_0_15px_rgba(16,185,129,0.1)]">
                     ⚡ Phase 02 begins: Mastering rapid prototyping and machine-based manufacturing at ProtoSem.
+                </div>
+
+                <!-- Page 3 Bottom Navigation Bar -->
+                <div class="p-4 bg-gray-900/80 rounded-2xl border border-gray-800 flex flex-wrap items-center justify-between gap-3 font-mono text-xs">
+                    <button type="button" onclick="switchWeek6Page(2)" class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 px-4 py-2.5 rounded-xl font-semibold transition-all border border-gray-700">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Previous: Page 2 (3D Printing)</span>
+                    </button>
+                    <button type="button" onclick="switchWeek6Page(1)" class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 px-4 py-2.5 rounded-xl font-semibold transition-all border border-gray-700">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <span>Return to Page 1 (Laser Cutting)</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -2226,7 +2436,37 @@
         }
 
         // Blog Modal Reader Functions
+        
+        // Week 06 3-Page Tab Navigation
+        function switchWeek6Page(pageNum) {
+            document.querySelectorAll('.week6-page').forEach(p => p.classList.add('hidden'));
+            document.querySelectorAll('.week6-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-emerald-500', 'text-white', 'border-emerald-400', 'shadow-[0_0_15px_rgba(16,185,129,0.3)]');
+                btn.classList.add('bg-gray-800/80', 'text-gray-400', 'border-gray-700/60');
+            });
+
+            const activePage = document.getElementById('w6-page-' + pageNum);
+            const activeBtn = document.getElementById('w6-tab-' + pageNum);
+            const indicatorText = document.getElementById('w6-page-indicator-text');
+
+            if (activePage) activePage.classList.remove('hidden');
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-gray-800/80', 'text-gray-400', 'border-gray-700/60');
+                activeBtn.classList.add('bg-emerald-500', 'text-white', 'border-emerald-400', 'shadow-[0_0_15px_rgba(16,185,129,0.3)]');
+            }
+            if (indicatorText) {
+                indicatorText.innerText = 'Page ' + pageNum + ' of 3';
+            }
+
+            // Scroll modal to top on page switch
+            const modalBody = document.querySelector('#blog-modal .overflow-y-auto');
+            if (modalBody) {
+                modalBody.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
         function openBlogModal(weekTitle) {
+            if (weekTitle === "WEEK 06") { switchWeek6Page(1); }
             document.querySelectorAll('.blog-section').forEach(el => el.classList.add('hidden'));
             const targetId = `blog-content-${weekTitle.replace(' ', '')}`;
             const targetEl = document.getElementById(targetId);
